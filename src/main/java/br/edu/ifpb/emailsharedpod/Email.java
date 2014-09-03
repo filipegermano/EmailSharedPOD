@@ -12,6 +12,7 @@ public class Email {
     private List<Pessoa> destinatarios;
     private String assunto;
     private String mensagem;
+    private boolean status;
 
     public List<Pessoa> getDestinatarios() {
         return destinatarios;
@@ -45,4 +46,11 @@ public class Email {
         this.mensagem = mensagem;
     }
 
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
 }
