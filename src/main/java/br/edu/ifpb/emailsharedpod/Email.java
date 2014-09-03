@@ -6,11 +6,20 @@ package br.edu.ifpb.emailsharedpod;
  */
 public class Email {
 
+    private Integer id;
     private String remetente;
     private String destinatarios;
     private String assunto;
     private String mensagem;
     private boolean status;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getDestinatarios() {
         return destinatarios;
