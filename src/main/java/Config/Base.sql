@@ -15,6 +15,7 @@ CREATE TABLE email(
    assunto varchar(80),
    status BOOLEAN DEFAULT FALSE,
    mensagem text,
-
+   ipServidor VARCHAR(80) NOT NULL,
+ 
    PRIMARY KEY(id)
 );

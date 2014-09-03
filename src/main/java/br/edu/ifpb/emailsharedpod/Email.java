@@ -11,6 +11,7 @@ public class Email {
     private String destinatarios;
     private String assunto;
     private String mensagem;
+    private String ipServidor;
     private boolean status;
 
     public Integer getId() {
@@ -53,6 +54,14 @@ public class Email {
         this.mensagem = mensagem;
     }
 
+    public String getIpServidor() {
+        return ipServidor;
+    }
+
+    public void setIpServidor(String ipServidor) {
+        this.ipServidor = ipServidor;
+    }
+    
     public boolean isStatus() {
         return status;
     }
