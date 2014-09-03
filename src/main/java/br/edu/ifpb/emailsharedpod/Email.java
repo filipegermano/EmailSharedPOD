@@ -1,7 +1,5 @@
 package br.edu.ifpb.emailsharedpod;
 
-import java.util.List;
-
 /**
  *
  * @author FILIPE
@@ -9,16 +7,16 @@ import java.util.List;
 public class Email {
 
     private String remetente;
-    private List<Pessoa> destinatarios;
+    private String destinatarios;
     private String assunto;
     private String mensagem;
     private boolean status;
 
-    public List<Pessoa> getDestinatarios() {
+    public String getDestinatarios() {
         return destinatarios;
     }
 
-    public void setDestinatarios(List<Pessoa> destinatarios) {
+    public void setDestinatarios(String destinatarios) {
         this.destinatarios = destinatarios;
     }
 
