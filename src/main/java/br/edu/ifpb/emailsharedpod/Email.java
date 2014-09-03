@@ -60,4 +60,10 @@ public class Email {
     public void setStatus(boolean status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "Email{" + "id=" + id + ", remetente=" + remetente + ", destinatarios=" + destinatarios + ", assunto=" + assunto + ", mensagem=" + mensagem + ", status=" + status + '}';
+    }
+
 }
