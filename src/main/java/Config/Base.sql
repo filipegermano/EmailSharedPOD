@@ -3,7 +3,9 @@
 CREATE TABLE pessoa(
    id serial, 
    nome varchar(80) NOT NULL, 
-   email varchar(80) NOT NULL
+   email varchar(80) NOT NULL,
+
+   PRIMARY KEY(id)
 );
 
 CREATE TABLE email(
@@ -12,5 +14,7 @@ CREATE TABLE email(
    destinatarios varchar NOT NULL,
    assunto varchar(80),
    status BOOLEAN DEFAULT FALSE,
-   mensagem text
+   mensagem text,
+
+   PRIMARY KEY(id)
 );
