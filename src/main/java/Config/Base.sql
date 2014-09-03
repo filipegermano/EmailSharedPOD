@@ -1,14 +1,16 @@
-CREATE DATABASE pod;
+--Criem um banco chamado pod
 
-CREATE TABLE pod.public.pessoa(
+CREATE TABLE pessoa(
    id serial, 
    nome varchar(80) NOT NULL, 
    email varchar(80) NOT NULL
 );
-CREATE TABLE pod.public.email(
+
+CREATE TABLE email(
    id serial,
    remetente varchar(80) NOT NULL,
    destinatarios varchar NOT NULL,
    assunto varchar(80),
+   status BOOLEAN DEFAULT FALSE,
    mensagem text
 );
