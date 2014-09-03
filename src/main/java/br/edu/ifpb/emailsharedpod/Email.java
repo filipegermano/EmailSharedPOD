@@ -1,10 +1,12 @@
 package br.edu.ifpb.emailsharedpod;
 
+import java.io.Serializable;
+
 /**
  *
  * @author FILIPE
  */
-public class Email {
+public class Email implements Serializable {
 
     private Integer id;
     private String remetente;
